@@ -19,7 +19,7 @@ Chen YH, Shen TJ (2023) Minimum habitat size required to detect new rare species
 If you have any questions, please contact:
 
 
-Prof. Youhua Chen, email: haydi@126.com;
+Prof. Youhua Chen, email: chenyh@cib.ac.cn;
 Address: CAS Key Laboratory of Mountain Ecological Restoration and Bioresource Utilization & Ecological Restoration and Biodiversity Conservation Key Laboratory of Sichuan Province, Chengdu Institute of Biology, Chinese Academy of Sciences, Chengdu, 610041.
 
 
