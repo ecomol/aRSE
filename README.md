@@ -10,8 +10,7 @@ new rare species.
 
 Details on the estimation methods have been described in the following paper:
 
-Chen YH, Shen TJ (2023) Minimum habitat size required to detect new rare species. Under Review.
-
+Chen YH, Shen TJ (2023) Minimum habitat size required to detect new rare species. Ecology. In revision.
 
 -------------------------------------------------------------------------------
 
