@@ -1,8 +1,10 @@
 ################################################################################################
 ################################################################################################
-#R code for estimating minimal habitat area size for detecting previously-unsampled rare species
+#R code for estimating minimal habitat area size 
+#for detecting previously-unsampled rare species
 #Written by Tsung-Jen Shen and Youhua Chen
 #2023-10-30
+#Updated: 2024-03-15
 ################################################################################################
 ################################################################################################
 
@@ -43,8 +45,8 @@ PoiLam <- function(x, zero = FALSE) {
   f2 <- sum(x == 2)
   if (zero == FALSE)
     x <- x[x > 0]
-  b.solve <- function(b) {
-    a <- f1 / sum(x * exp(-b * x))
+  b.solve <- function(b) {# Find the solution of \beta from Eq. (3a) and (3b) in the main text
+    a <- f1 / sum(x * exp(-b * x))# This is an equivalent expression of Eq. (3a)
     obj <-
       sum((x * (1 - a * exp(-b * x))) ^ 2) - sum(x * (x - 1)) + 2 *
       f2
@@ -88,7 +90,7 @@ Chao1.Pois = function(f) {
 # a is the surveyed areal size
 # h is the areal size of additional sample
 # b is the estimated parameters (a, b) in dual equations for estimating true detection intensities of species
-# an example: BW.Rh(c(10,5,3,0,4),2,c(.1,.2))
+# an example: BW.Rh(f = c(10,5,3,0,4), h = 2, b = c(.1,.2))
 BW.Rh = function(f, a = 1, h, b, k.show = 5) {
   h = h / a
   
